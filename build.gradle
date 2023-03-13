@@ -1,6 +1,6 @@
 plugins {
     id 'java-library'
-    id 'io.qameta.allure' version '2.11.2'
+    id 'io.qameta.allure' version '2.21.0'
 }
 
 group 'com.sardeni'
@@ -15,19 +15,19 @@ dependencies {
     testImplementation(
             'com.codeborne:selenide:6.11.0',
             'org.junit.jupiter:junit-jupiter:5.9.1',
-            'io.qameta.allure:allure-selenide:2.20.1')
+            'io.qameta.allure:allure-selenide:2.21.0')
 
     allure {
-        version.set("2.20.1")
+        version.set("2.21.0")
         adapter {
-            allureJavaVersion.set("2.20.1")
+            allureJavaVersion.set("2.21.0")
             aspectjVersion.set("1.9.5")
             aspectjWeaver.set(true)
 
             frameworks {
                 junit5 {
                     // Defaults to allureJavaVersion
-                    adapterVersion.set("2.20.1")
+                    adapterVersion.set("2.21.0")
                     enabled.set(true)
                 }
             }
